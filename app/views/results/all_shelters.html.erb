@@ -3,11 +3,11 @@
 <% if @shelters.first != nil %>
   <% @shelters.each do |shelter| %>
 
-  <p><%= shelter[:attributes][:name] %></p>
-  <p><%= shelter[:attributes][:address] %></p>
-  <p><%= shelter[:attributes][:city] %></p>
-  <p><%= shelter[:attributes][:zipcode] %></p>
-  <p><%= shelter[:attributes][:website] %></p>
+  <p><%= shelter.name %></p>
+  <p><%= shelter.address %></p>
+  <p><%= shelter.city %></p>
+  <p><%= shelter.zipcode %></p>
+  <p><%= shelter.website %></p>
   <br>
   <br>
   <% end %>
