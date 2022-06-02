@@ -6,14 +6,17 @@ RSpec.describe 'Welcome landing page' do
     expect(page).to have_content('HomeMe')
   end
 
-  # it 'allows unauthorized users to view all shelters' do
-  #   visit '/'
-  #
-  #   click_button 'view all shelters'
-  #   expect(current_path).to eq('/shelters')
-  #   expect(page).to have_content('Nativity Shelter for Women')
-  # end
+  it 'allows unauthorized users to view all shelters' do
+    visit '/'
 
+    click_button 'view all shelters'
+    expect(current_path).to eq('/shelters')
+    expect(page).to have_content('Nativity Shelter for Women')
+  end
+
+  scenario "allows unauthorized users to view all shelters" do
+    stub_request(:get,)
+  end
   # it 'allows unauthorized users to search shelters' do
   #   visit '/'
   #   fill_in 'search', with: '10182'
