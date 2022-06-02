@@ -1,0 +1,14 @@
+<h1>All Shelters</h1>
+
+<% if @shelters.first != nil %>
+  <% @shelters.each do |shelter| %>
+
+  <p><%= shelter[:attributes][:name] %></p>
+  <p><%= shelter[:attributes][:address] %></p>
+  <p><%= shelter[:attributes][:city] %></p>
+  <p><%= shelter[:attributes][:zipcode] %></p>
+  <p><%= shelter[:attributes][:website] %></p>
+  <br>
+  <br>
+  <% end %>
+<% end %>
