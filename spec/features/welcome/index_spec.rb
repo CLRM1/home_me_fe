@@ -21,5 +21,4 @@ RSpec.describe 'Welcome landing page' do
     expect(page).to have_content('La Casa TRP')
     expect(page).to have_content('Mickey Leland House')
   end
-
 end
