@@ -47,11 +47,11 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'rspec_junit_formatter'
 end
 
 group :test do
   gem 'webmock'
-  gem 'rspec_junit_formatter'
 end
 
 group :development do
