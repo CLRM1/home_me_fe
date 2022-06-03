@@ -7,10 +7,10 @@
 <body style="text-align: center">
   <nav class="navbar navbar-inverse navbar-static-top"
   <h1 style="font-family:tahoma">HomeMe</h1>
-  <%= form_with url: '/results', method: :get, local: true do |f| %>
-  <%= f.text_field :search, placeholder: 'enter your zipcode' %>
-  <%= f.button :search %>
-  <% end %>
+  <form action="/results" method="get">
+    <input type="text" id="search" placeholder="enter your zipcode"></input>
+    <button type="submit" class="btn btn-dark">Search</button>
+  </form>
   <br><br>
   <%= button_to 'view all shelters', '/shelters', method: :get, local: true%>
 
