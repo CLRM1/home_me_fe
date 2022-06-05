@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/results', to: 'results#index'
 
   get '/shelters', to: 'results#all_shelters'
+  get '/shelters/:name', to: 'results#show'
 end
