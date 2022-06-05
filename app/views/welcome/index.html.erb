@@ -6,13 +6,16 @@
 
 <body style="text-align: center">
   <nav class="navbar navbar-inverse navbar-static-top"
-  <h1 style="font-family:tahoma">HomeMe</h1>
-  <%= form_with url: '/results', method: :get, local: true do |f| %>
-  <%= f.text_field :search, placeholder: 'enter your zipcode' %>
-  <%= f.button :search %>
-  <% end %>
-  <br><br>
-  <%= button_to 'view all shelters', '/shelters', method: :get, local: true%>
+    <div class="jumbotron text-center">
+      <h1 style="font-family:tahoma">HomeMe</h1>
+      <%= form_with url: '/results', method: :get, local: true do |f| %>
+      <%= f.text_field :search, placeholder: 'enter your zipcode' %>
+      <%= f.button :search %>
+      <% end %>
+      <br><br>
+      <%= button_to 'view all shelters', '/shelters', method: :get, local: true%>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </div>
+  </nav>
 </body>
