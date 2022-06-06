@@ -1,0 +1,382 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "type": "shelter",
+            "attributes": {
+                "name": "Nativity Shelter for Women",
+                "provider": "Catholic Charities",
+                "address": "6010 Georgia Ave., NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20011",
+                "full_address": "6010 Georgia Ave., NW Washington, DC 20011",
+                "type": "Low Barrier",
+                "sub_type": "Women",
+                "number_of_beds": 25.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": null,
+                "website": "https://www.catholiccharitiesdc.org/nativity/"
+            }
+        },
+        {
+            "id": "2",
+            "type": "shelter",
+            "attributes": {
+                "name": "The Webster House",
+                "provider": "Coalition for the Homeless",
+                "address": "4326 14th Street NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20011",
+                "full_address": "4326 14th Street NW Washington, DC 20011",
+                "type": "Transitional",
+                "sub_type": "Men",
+                "number_of_beds": 12.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Coordinated Assessment & Housing Placement (CAHP) Process",
+                "onsite_medical_clinic": null,
+                "website": "http://www.dccfh.org/programs/housing/the-webster-house"
+            }
+        },
+        {
+            "id": "4",
+            "type": "shelter",
+            "attributes": {
+                "name": "Park Road Transitional Program",
+                "provider": "Coalition for the Homeless",
+                "address": "1318 Park Road NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20010",
+                "full_address": "1318 Park Road NW Washington, DC 20010",
+                "type": "Transitional",
+                "sub_type": "Men",
+                "number_of_beds": 12.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Coordinated Assessment & Housing Placement (CAHP) Process",
+                "onsite_medical_clinic": null,
+                "website": "http://www.dccfh.org/programs/housing/park-road-transitional-program"
+            }
+        },
+        {
+            "id": "5",
+            "type": "shelter",
+            "attributes": {
+                "name": "Casa Ruby",
+                "provider": "Casa Ruby",
+                "address": "2822 Georgia Ave NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20001",
+                "full_address": "2822 Georgia Ave NW Washington, DC 20001",
+                "type": "Low Barrier",
+                "sub_type": "Youth",
+                "number_of_beds": 17.0,
+                "lgbtq_focused": "Yes",
+                "ages_served": "18-24",
+                "how_to_access": "Show Up and/or Call the Shelter ",
+                "onsite_medical_clinic": "No",
+                "website": "http://www.casaruby.org/index.html"
+            }
+        },
+        {
+            "id": "6",
+            "type": "shelter",
+            "attributes": {
+                "name": "Adams Place Shelter",
+                "provider": "Catholic Charities",
+                "address": "2210 Adams Place, NE",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20018",
+                "full_address": "2210 Adams Place, NE Washington, DC 20018",
+                "type": "Low Barrier",
+                "sub_type": "Men",
+                "number_of_beds": 150.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": null,
+                "website": "https://www.catholiccharitiesdc.org/housing-shelter/adamsplace/"
+            }
+        },
+        {
+            "id": "7",
+            "type": "shelter",
+            "attributes": {
+                "name": "New York Avenue Shelter",
+                "provider": "Catholic Charities",
+                "address": "1355 New York Avenue, NE",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20002",
+                "full_address": "1355 New York Avenue, NE Washington, DC 20002",
+                "type": "Low Barrier",
+                "sub_type": "Men",
+                "number_of_beds": 360.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": "Yes",
+                "website": "https://www.catholiccharitiesdc.org/housing-shelter/newyorkave/"
+            }
+        },
+        {
+            "id": "9",
+            "type": "shelter",
+            "attributes": {
+                "name": "Emery Work Bed Program",
+                "provider": "Coalition for the Homeless",
+                "address": "1725 Lincoln Road NE",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20002",
+                "full_address": "1725 Lincoln Road NE Washington, DC 20002",
+                "type": "Transitional",
+                "sub_type": "Men",
+                "number_of_beds": 100.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Coordinated Assessment & Housing Placement (CAHP) Process",
+                "onsite_medical_clinic": null,
+                "website": "http://www.dccfh.org/programs/housing/emery-work-bed-program-ewbp"
+            }
+        },
+        {
+            "id": "10",
+            "type": "shelter",
+            "attributes": {
+                "name": "New Endeavors by Women",
+                "provider": "New Endeavors by Women",
+                "address": "611 N St. NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20001",
+                "full_address": "611 N St. NW Washington, DC 20001",
+                "type": "Transitional/Permanent",
+                "sub_type": "Women",
+                "number_of_beds": 15.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Coordinated Assessment & Housing Placement (CAHP) Process",
+                "onsite_medical_clinic": "No",
+                "website": "http://nebw.org/"
+            }
+        },
+        {
+            "id": "11",
+            "type": "shelter",
+            "attributes": {
+                "name": "Blair House ",
+                "provider": "Coalition for the Homeless",
+                "address": "635 Eye Street, NE",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20002",
+                "full_address": "635 Eye Street, NE Washington, DC 20002",
+                "type": "Transitional",
+                "sub_type": "Men",
+                "number_of_beds": 85.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Coordinated Assessment & Housing Placement (CAHP) Process",
+                "onsite_medical_clinic": null,
+                "website": "http://www.dccfh.org/programs/housing/blair-transitional-rehabilitation-program"
+            }
+        },
+        {
+            "id": "12",
+            "type": "shelter",
+            "attributes": {
+                "name": "Pat Handy Shelter for Women",
+                "provider": "N Street Village",
+                "address": "810 5th St. NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20001",
+                "full_address": "810 5th St. NW Washington, DC 20001",
+                "type": "Low Barrier",
+                "sub_type": "Women",
+                "number_of_beds": 213.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": "Yes",
+                "website": "http://www.nstreetvillage.org/about-the-village/programs-impact/housing-community/"
+            }
+        },
+        {
+            "id": "13",
+            "type": "shelter",
+            "attributes": {
+                "name": "Central Union Mission",
+                "provider": "Central Union Mission",
+                "address": "65 Massachusetts Avenue, NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20001",
+                "full_address": "65 Massachusetts Avenue, NW Washington, DC 20001",
+                "type": "Transitional",
+                "sub_type": "Men",
+                "number_of_beds": 25.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": "Yes",
+                "website": "http://www.missiondc.org/"
+            }
+        },
+        {
+            "id": "14",
+            "type": "shelter",
+            "attributes": {
+                "name": "Sasha Bruce Youthworks",
+                "provider": "Sasha Bruce Youthworks",
+                "address": "1022 Maryland Ave NE",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20002",
+                "full_address": "1022 Maryland Ave NE Washington, DC 20002",
+                "type": "Crisis",
+                "sub_type": "Youth-Minors",
+                "number_of_beds": 10.0,
+                "lgbtq_focused": null,
+                "ages_served": "11-17",
+                "how_to_access": "Show Up and/or Call the Shelter ",
+                "onsite_medical_clinic": "No",
+                "website": "http://www.sashabruce.org/programs/safehomes/sasha-bruce-house/"
+            }
+        },
+        {
+            "id": "15",
+            "type": "shelter",
+            "attributes": {
+                "name": "Center for Creative Non-Violence (CCNV)",
+                "provider": "New Hope Ministries",
+                "address": "425 2nd St, NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20001",
+                "full_address": "425 2nd St, NW Washington, DC 20001",
+                "type": "Low Barrier/Transitional",
+                "sub_type": "Men & Women",
+                "number_of_beds": 964.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": "Yes",
+                "website": "http://www.theccnv.org/about.htm"
+            }
+        },
+        {
+            "id": "16",
+            "type": "shelter",
+            "attributes": {
+                "name": "Harriet Tubman Shelter & Day Center",
+                "provider": "Catholic Charities",
+                "address": "1900 Massachusetts Ave SE, Bldg. 27 ",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20003",
+                "full_address": "1900 Massachusetts Ave SE, Bldg. 27  Washington, DC 20003",
+                "type": "Low Barrier/Transitional",
+                "sub_type": "Women",
+                "number_of_beds": 100.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": null,
+                "website": "https://www.catholiccharitiesdc.org/harriettubman/"
+            }
+        },
+        {
+            "id": "17",
+            "type": "shelter",
+            "attributes": {
+                "name": "801 East - Shelter",
+                "provider": "Catholic Charities",
+                "address": "2700 Martin Luther King Jr. Ave, SE ",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20032",
+                "full_address": "2700 Martin Luther King Jr. Ave, SE  Washington, DC 20032",
+                "type": "Low Barrier/Transitional",
+                "sub_type": "Men",
+                "number_of_beds": 450.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": "Yes",
+                "website": "https://www.catholiccharitiesdc.org/housing-shelter/801east/"
+            }
+        },
+        {
+            "id": "18",
+            "type": "shelter",
+            "attributes": {
+                "name": "Covenant House Washington",
+                "provider": "Covenant House Washington",
+                "address": "2001 Mississippi Ave SE",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20020",
+                "full_address": "2001 Mississippi Ave SE Washington, DC 20020",
+                "type": "Low Barrier",
+                "sub_type": "Youth",
+                "number_of_beds": 20.0,
+                "lgbtq_focused": null,
+                "ages_served": "18-24",
+                "how_to_access": "Show Up and/or Call the Shelter",
+                "onsite_medical_clinic": "No",
+                "website": "http://covenanthousedc.org/our-services/housing/"
+            }
+        },
+        {
+            "id": "3",
+            "type": "shelter",
+            "attributes": {
+                "name": "La Casa TRP",
+                "provider": "Coalition for the Homeless",
+                "address": "1131 Spring Road NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20010",
+                "full_address": "1131 Spring Road NW Washington, DC 20010",
+                "type": "Transitional",
+                "sub_type": "Men",
+                "number_of_beds": 40.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Coordinated Assessment & Housing Placement (CAHP) Process",
+                "onsite_medical_clinic": null,
+                "website": "http://www.dccfh.org/programs/housing/la-casa-transitional-rehabilitation-program-trp"
+            }
+        },
+        {
+            "id": "8",
+            "type": "shelter",
+            "attributes": {
+                "name": "Mickey Leland House",
+                "provider": "Coalition for the Homeless",
+                "address": "455/457 Florida Avenue NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20001",
+                "full_address": "455/457 Florida Avenue NW Washington, DC 20001",
+                "type": "Transitional",
+                "sub_type": "Men",
+                "number_of_beds": 22.0,
+                "lgbtq_focused": null,
+                "ages_served": "18+",
+                "how_to_access": "Coordinated Assessment & Housing Placement (CAHP) Process",
+                "onsite_medical_clinic": null,
+                "website": "http://www.dccfh.org/programs/housing/mickey-leland-house"
+            }
+        }
+    ]
+}
