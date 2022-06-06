@@ -1,14 +1,24 @@
-<h1>All Shelters</h1>
-
-<% if @shelters.first != nil %>
-  <% @shelters.each do |shelter| %>
-
-  <p><%= shelter.name %></p>
-  <p><%= shelter.address %></p>
-  <p><%= shelter.city %></p>
-  <p><%= shelter.zipcode %></p>
-  <p><%= shelter.website %></p>
-  <br>
-  <br>
-  <% end %>
-<% end %>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <div class="container">
+    <div class="row">
+      <body>
+        <h1 style="color: green;"><center>All Shelters</center></h1>
+        <hr>
+        <% if @shelters.first != nil %>
+          <% @shelters.each do |shelter| %>
+            <blockquote>
+              <h4><p class="text-info"><%= shelter.name %></p></h4>
+              <p><strong>Address: </strong><%= shelter.address %>, <%= shelter.city %> <%= shelter.zipcode %></p>
+              <p><strong>Shelter website: </strong><%= shelter.website %></p>
+              <hr>
+            </blockquote>
+          <% end %>
+        <% end %>
+      </body>
+    </div>
+  </div>
+</html>
