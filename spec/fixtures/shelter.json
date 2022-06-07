@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "type": "shelter",
+            "attributes": {
+                "name": "Nativity Shelter for Women",
+                "provider": "Catholic Charities",
+                "address": "6010 Georgia Ave., NW",
+                "city": "Washington",
+                "state": "DC",
+                "zipcode": "20011",
+                "full_address": "6010 Georgia Ave., NW Washington, DC 20011",
+                "shelter_type": "Low Barrier",
+                "sub_type": "Women",
+                "number_of_beds": 25.0,
+                "lgbtq_focused": "nil",
+                "ages_served": "18+",
+                "how_to_access": "Show Up and/or Call Shelter Hotline (311)",
+                "onsite_medical_clinic": "nil",
+                "website": "https://www.catholiccharitiesdc.org/nativity/"
+            }
+        }
+    ]
+}
