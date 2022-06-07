@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   get '/shelters', to: 'results#all_shelters'
 
+  get '/shelters/:name', to: 'results#show'
+  
   get '/auth/google_oauth2/callback', to: 'users#create'
 end
