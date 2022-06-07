@@ -8,7 +8,6 @@
       <body>
         <h1 style="color: green;"><center>All Shelters</center></h1>
         <hr>
-        <% if @shelters.first != nil %>
           <% @shelters.each do |shelter| %>
             <blockquote>
               <h4><p class="text-info"><%= shelter.name %></p></h4>
@@ -17,7 +16,6 @@
               <hr>
             </blockquote>
           <% end %>
-        <% end %>
       </body>
     </div>
   </div>
