@@ -9,6 +9,7 @@ class ResultsController < ApplicationController
 
   def all_shelters
     @shelters = SheltersFacade.all_shelters
+    @facade = SheltersFacade.users_shelters(session[:user_id])
   end
 
   def save

@@ -13,4 +13,8 @@ class SheltersFacade
   def self.save_shelter(shelter_id, user_id)
     SheltersService.post_save_shelter(shelter_id, user_id)
   end
+
+  def self.users_shelters(user_id)
+    SheltersService.get_users_shelters(user_id)
+  end
 end
