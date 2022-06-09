@@ -10,10 +10,17 @@
         <hr>
           <% @shelters.each do |shelter| %>
             <blockquote>
-              <h4><p class="text-info"><%= shelter.name %></p></h4>
-              <p><strong>Address: </strong><%= shelter.address %>, <%= shelter.city %> <%= shelter.zipcode %></p>
-              <p><strong>Shelter website: </strong><%= shelter.website %></p>
-              <hr>
+              <div id="shelter-<%= shelter.id %>">
+                <h4><p class="text-info"><%= shelter.name %></p></h4>
+                <p><strong>Address: </strong><%= shelter.address %>, <%= shelter.city %> <%= shelter.zipcode %></p>
+                <p><strong>Shelter website: </strong><%= shelter.website %></p>
+                <%= form_with url: "/save_shelter", method: :post, local: true do |f| %>
+                  <%= f.hidden_field :shelter_id, value: "#{shelter.id}" %>
+                  <%= f.hidden_field :user_id, value: "#{session[:user_id]}" %>
+                  <%= f.submit "Add shelter" %>
+                <% end %>
+                <hr>
+            </div>
             </blockquote>
           <% end %>
       </body>
