@@ -17,11 +17,22 @@ RSpec.describe 'Sign up without oauth' do
 
     expect(current_path).to eq("/dashboard")
     expect(page).to have_content('logout')
-    # expect(page).to have_content("Welcome, #{email}")
-    # expect(page).to_not have_content("sign up")
-    # expect a specific new user to exist i.e. user.last
-    # password envcryption
-    # incorporate a session to validate that a user is logged in based on session id
-    #
+    expect(page).to have_content("Welcome, #{email}!")
+    expect(page).to_not have_content("sign up")
+    expect(User.last).to be_a(User)
+
+    click_on "logout"
+
+    expect(current_path).to eq('/')
+
+    click_on "log in"
+
+    expect(current_path).to eq('/users/log_in')
+
+    fill_in "email", with: email
+    fill_in "password", with: password
+    click_on "Submit"
+
+    expect(current_path).to eq('/dashboard')
   end
 end
