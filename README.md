@@ -1,13 +1,14 @@
-# HomeMe FE
+# HomeMe
+![home_me (1)](https://user-images.githubusercontent.com/77861247/173090073-d36a5dd9-64a8-49dd-a921-3f6c5d330a6d.jpg)
 
-## Welcome to the HomeMe Application!
+# Welcome to the HomeMe Application!
 + This application was built in conjunction with the [home_me_be](https://github.com/aspeth/home_me_be) Back End application.
 + This application is designed to provide a way for people who need shelter to find homeless shelters and directions to them.
 + At this time, the app utilizes available shelter API in the Washington DC area with the idea that one day it can implement more shelter APIs from across the country as they become available.
 + We consume the external APIs of Google Maps and DC Shelters to gather data about homeless shelters in the Washington DC area as well as directions to those shelters from a given starting point.
 + As the FrontEnd team for the app, we are consuming API endpoints to be exposed by the BackEnd team to be displayed to the user.
-+ 
-![home_me (1)](https://user-images.githubusercontent.com/77861247/173090073-d36a5dd9-64a8-49dd-a921-3f6c5d330a6d.jpg)
+
+
 
 ## Versions
 * Ruby Version - 2.7.4
