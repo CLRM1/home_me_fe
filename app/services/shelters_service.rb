@@ -5,12 +5,13 @@ class SheltersService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.post_save_shelter(shelter_id, user_id)
+  def self.post_save_shelter(shelter_id, user_id, user_email)
     data = {data:
               [
                 {
                   shelter_id: shelter_id,
-                  user_id: user_id
+                  user_id: user_id,
+                  user_email: user_email
                 }
               ]}
     connection = Faraday.new(url: "https://desolate-caverns-04440.herokuapp.com/api/v1/")
