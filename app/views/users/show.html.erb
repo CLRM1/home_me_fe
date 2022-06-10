@@ -9,7 +9,7 @@
 <% end %>
 <br><br>
 <h2>My Shelters</h2>
-<% if !@shelters[:data].has_key?(:message) %>
+<% if !@shelters.is_a?(Array) %>
   <% @shelters[:data].each do |shelter| %>
       <p><%= shelter[:attributes][:name]%></p>
   <% end %>
