@@ -9,7 +9,7 @@
 <% end %>
 <br><br>
 <h2>My Shelters</h2>
-<% if @shelters.is_a?(Array) %>
+<% if @shelters[:data].is_a?(Array) %>
   <% @shelters[:data].each do |shelter| %>
       <p><%= shelter[:attributes][:name]%></p>
       <%= button_to "Delete #{shelter[:attributes][:name]}", "/users/#{@user_id}/shelters/#{shelter[:id]}", method: :delete %>

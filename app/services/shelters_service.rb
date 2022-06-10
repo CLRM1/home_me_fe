@@ -14,7 +14,7 @@ class SheltersService
                   user_email: user_email
                 }
               ]}
-    connection = Faraday.new(url: "https://desolate-caverns-04440.herokuapp.com/api/v1/")
+    connection = Faraday.new(url: "http://localhost:5000/api/v1/")
     response = connection.post("user_shelters", body = data.to_json)
   end
 
