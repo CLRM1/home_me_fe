@@ -10,7 +10,7 @@
         <hr>
           <% @shelters.each do |shelter| %>
             <blockquote>
-              <h4><p class="text-info"><%= shelter.name %></p></h4>
+              <h4><p class="text-info"><%= link_to "#{shelter.name}", "/shelters/#{shelter.name}" %></p></h4>
               <p><strong>Address: </strong><%= shelter.address %>, <%= shelter.city %> <%= shelter.zipcode %></p>
               <p><strong>Shelter website: </strong><%= shelter.website %></p>
               <hr>
