@@ -10,6 +10,7 @@
 
           <% @shelters.each do |shelter| %>
             <blockquote>
+
               <div id="shelter-<%= shelter.id %>">
                 <h4><p class="text-info"><%= shelter.name %></p></h4>
                 <p><strong>Address: </strong><%= shelter.address %>, <%= shelter.city %> <%= shelter.zipcode %></p>

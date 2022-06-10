@@ -16,7 +16,7 @@
     <p><strong>How to Access:</strong> <%= @shelter.how_to_access %></p>
     <p><strong>Onsite Medical Clinic:</strong> <%= @shelter.onsite_medical_clinic %></p>
     <br>
-    
+
     <h3>Get Directions</h3>
 
     <%= form_with url: "/shelters/#{@shelter_name_hyphen}", method: :get, local: true do |f| %>
@@ -33,6 +33,5 @@
             <% @directions.map do |direction|%>
                 <ul><strong>- <%= direction.string_direction %></strong></ul>
             <% end %>
-        <% end %> 
+        <% end %>
 <% end %>
-
