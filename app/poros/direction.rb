@@ -1,8 +1,8 @@
 class Direction
 
-  attr_reader :directions
+  attr_reader :string_direction
 
-  def initialize(data)
-    @directions = data[0][:attributes][:directions]
+  def initialize(data)   
+    @string_direction = ActionView::Base.full_sanitizer.sanitize(data)
   end
 end

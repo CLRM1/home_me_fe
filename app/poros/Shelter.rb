@@ -19,4 +19,12 @@ class Shelter
     @onsite_medical_clinic = data[:attributes][:onsite_medical_clinic]
     @website = data[:attributes][:website]
   end
+
+  # below method: trying to substitute any empty or nil params with "N/A" as the value. GodSpeed.
+
+  # def nil_param
+  #   if params[:type] || params[:lqbtq_focused] || params[:onsite_medical_clinic] == nil 
+  #      params[:type] || params[:lqbtq_focused] || params[:onsite_medical_clinic] = 'N/A' 
+  #   end 
+  # end 
 end

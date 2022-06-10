@@ -1,13 +1,37 @@
-<p>Directions</p>
-<%= form_with url: "/shelters/#{@shelter_name_hyphen}", method: :get, local: true do |f| %>
-<%= f.text_field :address, placeholder: 'current street name' %>
-<%= f.text_field :zipcode, placeholder: 'enter zipcode' %>
-<%= f.button :search %>
-<% end %>
 
 <h1 style="color: #0dcaf0;"><%= @shelter.name %></h1>
+
 <br>
-<p><strong>Address:</strong> <%= @shelter.address %>,
-<%= @shelter.city %>
-<%= @shelter.zipcode %></p>
-<p><strong>Website:</strong> <%= @shelter.website %></p>
+<% if !@directions %>
+
+    <p><strong>Address:</strong> <%= @shelter.address %></p>
+    <p><strong>Website:</strong> <%= @shelter.website %></p>
+    <p><strong>Provider:</strong> <%= @shelter.provider %></p>
+    <p><strong>Shelter Type:</strong> <%= @shelter.type %></p>
+    <p><strong>Shelter Sub Type:</strong> <%= @shelter.sub_type %></p>
+    <p><strong>Number of Beds:</strong> <%= @shelter.number_of_beds %></p>
+    <p><strong>LGBTQ Focused:</strong> <%= @shelter.lgbtq_focused %></p>
+    <p><strong>Ages Served:</strong> <%= @shelter.ages_served %></p>
+    <p><strong>How to Access:</strong> <%= @shelter.how_to_access %></p>
+    <p><strong>Onsite Medical Clinic:</strong> <%= @shelter.onsite_medical_clinic %></p>
+    <br>
+    
+    <h3>Get Directions</h3>
+
+    <%= form_with url: "/shelters/#{@shelter_name_hyphen}", method: :get, local: true do |f| %>
+        <%= f.text_field :address, placeholder: 'current street name' %>
+        <%= f.text_field :zipcode, placeholder: 'enter zipcode' %>
+        <%= f.button "Get Directions" %>
+    <% end %>
+<% else %>
+
+    <br>
+
+    <h2>Directions</h2>
+        <% if @directions.any? %>
+            <% @directions.map do |direction|%>
+                <ul><strong>- <%= direction.string_direction %></strong></ul>
+            <% end %>
+        <% end %> 
+<% end %>
+
