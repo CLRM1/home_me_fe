@@ -7,3 +7,8 @@
 <%= f.text_field :name, placeholder: 'enter shelter name' %>
 <%= f.button :search %>
 <% end %>
+<br><br>
+<h2>My Shelters</h2>
+<% @shelters[:data].each do |shelter| %>
+    <p><%= shelter[:attributes][:name]%></p>
+<% end %>
