@@ -13,8 +13,12 @@ class ResultsController < ApplicationController
   end
 
   def show
+    @shelter_name_hyphen = params[:name.downcase]
     @shelter_name  = params[:name].split('-').join(" ")
     @shelters = SheltersFacade.all_shelters
-    @shelter = @shelters.find { |shelter| shelter.name.downcase == @shelter_name }
+    @shelter = @shelters.find { |shelter| shelter.name.downcase.include? @shelter_name }
+    if params[:address]
+    @directions = DirectionsFacade.directions(@shelter.full_address, params[:address])
+    end
   end
 end
