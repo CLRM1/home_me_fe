@@ -1,1 +1,19 @@
 <h1>Welcome, <%= @email %>!</h1>
+<br><br>
+<h2>Search for a Shelter</h2>
+<%= form_with url: '/results', method: :get, local: true do |f| %>
+<%= f.text_field :address, placeholder: 'current street name' %>
+<%= f.text_field :zipcode, placeholder: 'enter zipcode' %>
+<%= f.text_field :name, placeholder: 'enter shelter name' %>
+<%= f.button :search %>
+<% end %>
+<br><br>
+<h2>My Shelters</h2>
+<% if !@shelters.is_a?(Array) %>
+  <% @shelters[:data].each do |shelter| %>
+      <p><%= shelter[:attributes][:name]%></p>
+      <%= button_to "Delete #{shelter[:attributes][:name]}", "/users/#{@user_id}/shelters/#{shelter[:id]}", method: :delete %>
+  <% end %>
+  <% else %>
+    <p> No saved shelters </p>
+<% end %>
