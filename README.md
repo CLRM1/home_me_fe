@@ -1,5 +1,6 @@
 # HomeMe FE
-![home_me (1)](https://user-images.githubusercontent.com/77861247/173089640-c85e7b9c-35fd-4afb-9bf9-a835027f838d.jpeg)
+![home_me (1)](https://user-images.githubusercontent.com/77861247/173090073-d36a5dd9-64a8-49dd-a921-3f6c5d330a6d.jpg)
+
 
 ## Welcome to the HomeMe Application
 + This API was built in conjunction with the [home_me_be](https://github.com/CLRM1/home_me_fe) Front End application.
