@@ -10,8 +10,8 @@ class SheltersFacade
   def self.search_for_shelters_by_zip(zipcode)
   end
 
-  def self.save_shelter(shelter_id, user_id)
-    SheltersService.post_save_shelter(shelter_id, user_id)
+  def self.save_shelter(shelter_id, user_id, user_email)
+    SheltersService.post_save_shelter(shelter_id, user_id, user_email)
   end
 
   def self.users_shelters(user_id)

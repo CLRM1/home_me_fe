@@ -13,7 +13,7 @@ class ResultsController < ApplicationController
   end
 
   def save
-    @save_shelter = SheltersFacade.save_shelter(params[:shelter_id], params[:user_id])
+    @save_shelter = SheltersFacade.save_shelter(params[:shelter_id], params[:user_id], params[:user_email])
     redirect_to "/shelters"
   end
 
