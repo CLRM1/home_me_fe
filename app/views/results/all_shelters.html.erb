@@ -1,19 +1,30 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <div class="container">
     <div class="row">
       <body>
         <h1 style="color: green;"><center>All Shelters</center></h1>
         <hr>
+
           <% @shelters.each do |shelter| %>
             <blockquote>
-              <h4><p class="text-info"><%= shelter.name %></p></h4>
-              <p><strong>Address: </strong><%= shelter.address %>, <%= shelter.city %> <%= shelter.zipcode %></p>
-              <p><strong>Shelter website: </strong><%= shelter.website %></p>
-              <hr>
+              <div id="shelter-<%= shelter.id %>">
+                <h4><p class="text-info"><%= shelter.name %></p></h4>
+                <p><strong>Address: </strong><%= shelter.address %>, <%= shelter.city %> <%= shelter.zipcode %></p>
+                <p><strong>Shelter website: </strong><%= shelter.website %></p>
+                <% if !@facade.include?("#{session[:user_id]}") %>
+                  <%= form_with url: "/save_shelter", method: :post, local: true do |f| %>
+                    <%= f.hidden_field :shelter_id, value: "#{shelter.id}" %>
+                    <%= f.hidden_field :user_id, value: "#{session[:user_id]}" %>
+                    <%= f.submit "Add shelter" %>
+                  <% end %>
+                  <% else %>
+                    <p>Saved</p>
+                  <% end %>
+                <hr>
+            </div>
             </blockquote>
           <% end %>
       </body>

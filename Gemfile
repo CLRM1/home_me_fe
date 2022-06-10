@@ -53,6 +53,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'rspec_junit_formatter'
+  gem 'launchy'
 end
 
 group :test do
