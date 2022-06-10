@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Sign up without oauth' do
-  it 'can create and sign up a user from the welcome page' do
+  xit 'can create and sign up a user from the welcome page' do
     visit '/'
 
     click_on "sign up"

@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Save shelter" do
-  it "a user can save a shelter from all shelters page" do
+  xit "a user can save a shelter from all shelters page" do
     email = "example@example.com"
     password = "abc123"
     # shelters = File.open("./spec/fixtures/shelter.json")

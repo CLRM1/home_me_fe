@@ -12,5 +12,8 @@
 <% if !@shelters.is_a?(Array) %>
   <% @shelters[:data].each do |shelter| %>
       <p><%= shelter[:attributes][:name]%></p>
+      <%= button_to "Delete #{shelter[:attributes][:name]}", "/users/#{@user_id}/shelters/#{shelter[:id]}", method: :delete %>
   <% end %>
+  <% else %>
+    <p> No saved shelters </p>
 <% end %>

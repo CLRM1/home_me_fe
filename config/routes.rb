@@ -23,4 +23,6 @@ Rails.application.routes.draw do
   get "/dashboard", to: "users#show"
 
   post "/save_shelter", to: "results#save"
+
+  delete "/users/:user_id/shelters/:shelter_id", to: "results#destroy"
 end

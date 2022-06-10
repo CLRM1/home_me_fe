@@ -39,12 +39,12 @@ class UsersController < ApplicationController
   end
 
   def show
-    user_id = session[:user_id]
-    user = User.find(user_id)
-    @email = user.email
+    @user_id = session[:user_id]
+    @user = User.find(@user_id)
+    @email = @user.email
 
     connection = Faraday.new(url: "https://desolate-caverns-04440.herokuapp.com/api/v1/")
-    response = connection.get("users/#{user_id}/shelters")
+    response = connection.get("users/#{@user_id}/shelters")
     @shelters = JSON.parse(response.body, symbolize_names: true)
   end
 

@@ -26,6 +26,12 @@ class ResultsController < ApplicationController
       @directions = DirectionsFacade.directions(@shelter.full_address, params[:address])
     end
   end
+
+  def destroy
+    conn = Faraday.new("https://desolate-caverns-04440.herokuapp.com/api/v1/")
+    conn.delete("users/#{params[:user_id]}/shelters/#{params[:shelter_id]}")
+    redirect_to "/dashboard"
+  end
 end
 
 # given how we founded in such shallow water with the show action, we were reluctant to set sail and adjust anything within this action
