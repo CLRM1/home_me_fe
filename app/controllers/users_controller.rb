@@ -42,8 +42,6 @@ class UsersController < ApplicationController
     user_id = session[:user_id]
     user = User.find(user_id)
     @email = user.email
-
-    # @facade = SheltersFacade.users_shelters(params[:user_id])
   end
 
   def destroy

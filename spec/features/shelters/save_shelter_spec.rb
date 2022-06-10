@@ -19,8 +19,10 @@ RSpec.describe "Save shelter" do
 
     within("#shelter-1") do
       click_button "Add shelter"
-
-      expect(page).to have_button("Add shelter", disabled: true)
+      save_and_open_page
     end
+    # within("#shelter-1") do
+      # expect(page).to have_content('Saved')
+    # end
   end
 end
