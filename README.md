@@ -1,9 +1,7 @@
 # HomeMe FE
-![home_me (1)](https://user-images.githubusercontent.com/77861247/173090073-d36a5dd9-64a8-49dd-a921-3f6c5d330a6d.jpg)
 
-
-## Welcome to the HomeMe Application
-+ This API was built in conjunction with the [home_me_be](https://github.com/CLRM1/home_me_fe) Front End application.
+## Welcome to the HomeMe Application!
++ This application was built in conjunction with the [home_me_be](https://github.com/aspeth/home_me_be) Back End application.
 + This application is designed to provide a way for people who need shelter to find homeless shelters and directions to them.
 + At this time, the app utilizes available shelter API in the Washington DC area with the idea that one day it can implement more shelter APIs from across the country as they become available.
 + We consume the external APIs of Google Maps and DC Shelters to gather data about homeless shelters in the Washington DC area as well as directions to those shelters from a given starting point.
@@ -32,8 +30,10 @@
 
 ## DB Schema
 ![Screen Shot 2022-06-10 at 8 37 46 AM](https://user-images.githubusercontent.com/77861247/173089562-fc5c9596-2111-4dd7-abca-636feb2b59db.png)
+<img width="599" alt="BE_schema" src="https://user-images.githubusercontent.com/77861247/173090494-3d2aa65e-fa08-4180-8ad1-af588689e799.png">
 
 
+![home_me (1)](https://user-images.githubusercontent.com/77861247/173090073-d36a5dd9-64a8-49dd-a921-3f6c5d330a6d.jpg)
 ## Contributors
 #### Back End Team
 * Andrew Speth [GitHub](https://github.com/aspeth), [LinkedIn](https://www.linkedin.com/in/andrew-speth/)
